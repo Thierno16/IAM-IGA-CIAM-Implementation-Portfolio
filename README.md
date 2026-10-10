@@ -25,6 +25,24 @@ an IAM engineering interview.
 
 ------------------------------------------------------------------------
 
+## 🧭 Portfolio Navigation
+
+-   [Architecture & Technology Stack](#-architecture)
+-   [HR-Driven Identity
+    Onboarding](#1-hr-driven-identity-onboarding--joiner)
+-   [Provisioning to OpenLDAP](#2-provisioning-to-openldap)
+-   [Role-Based Access Control](#3-role-based-access-control-rbac)
+-   [Mover Lifecycle](#4-mover-lifecycle--engineering-to-hr)
+-   [Access Certification & Governance
+    Loop](#5-access-certification--the-governance-loop)
+-   [Non-Human Identity
+    Governance](#6-non-human-identity-nhi--service-account-governance)
+-   [OAuth 2.0](#7-oauth-20--delegated-authorization)
+-   [OpenID Connect](#8-openid-connect-oidc)
+-   [SAML 2.0](#9-saml-20--enterprise-federation)
+
+------------------------------------------------------------------------
+
 ## 🏗️ Architecture
 
 ``` mermaid
@@ -48,27 +66,27 @@ flowchart TD
 
 ### Technology Stack
 
-  -----------------------------------------------------------------------
-  Technology                          Role in the Lab
-  ----------------------------------- -----------------------------------
-  **midPoint**                        IGA, reconciliation, lifecycle,
-                                      RBAC, certification, audit
+  ---------------------------------------------------------------------
+  Technology                         Role in the Lab
+  ---------------------------------- ----------------------------------
+  **midPoint**                       IGA, reconciliation, lifecycle,
+                                     RBAC, certification, audit
 
-  **SimplifyHR**                      Simulated authoritative HR source
+  **SimplifyHR**                     Simulated authoritative HR source
 
-  **OpenLDAP**                        Downstream directory / provisioning
-                                      target
+  **OpenLDAP**                       Downstream directory /
+                                     provisioning target
 
-  **phpLDAPadmin**                    LDAP administration and
-                                      verification
+  **phpLDAPadmin**                   LDAP administration and
+                                     verification
 
-  **Auth0**                           Identity provider, OIDC/OAuth and
-                                      SAML federation
+  **Auth0**                          Identity provider, OIDC/OAuth and
+                                     SAML federation
 
-  **Salesforce**                      SAML service provider
+  **Salesforce**                     SAML service provider
 
-  **GitHub OAuth**                    Delegated authorization exercise
-  -----------------------------------------------------------------------
+  **GitHub OAuth**                   Delegated authorization exercise
+  ---------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 
